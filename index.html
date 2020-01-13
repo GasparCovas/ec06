@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<body>
+    <script>
+        function load() {
+
+
+            $("div#titulo").css({
+                "display": "flex",
+                "flex-direction": "column",
+                "background-color": "gray",
+                "width": "300px",
+                "margin": "auto",
+                "text-align": "center"
+            });
+            $("div#ranking").css({
+                "display": "flex",
+                "flex-direction": "column",
+                "background-color": "gray",
+                "width": "300px",
+                "margin": "auto",
+                "text-align": "center"
+            });
+        }
+        window.onload = load;
+    </script>
+    <h2>Nivel: </h2>
+    <select id="mySelect">
+        <option value="facil">Fácil</option>
+        <option value="medio">Medio</option>
+        <option value="dificil">Difícil</option>
+    </select>
+    </br>
+    <div id="titulo">RANKING NIVEL FÁCIL
+        <div id="ranking"></div>
+
+    </div>
+    </br>
+    <p>Nombre: </p>
+    <input id="nick">
+    <button onclick="myNivel()">Tirar cartas</button>
+    <p id="limite"></p>
+    <p>
+        <span id="minutos">00</span>:<span id="segundos">00</span>
+    </p>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
